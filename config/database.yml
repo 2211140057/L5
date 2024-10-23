@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  database: storage/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: l5_4ihh
+  username: l5_4ihh_user
+  password: <%= ENV[tbrlLd17KViydK6CFMfj9IAMFRuWp43S]] %>
+  url: <%= ENV[postgresql://l5_4ihh_user:tbrlLd17KViydK6CFMfj9IAMFRuWp43S@dpg-csbsdh2j1k6c73cefvn0-a/l5_4ihh] %>
